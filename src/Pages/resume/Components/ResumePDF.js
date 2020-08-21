@@ -19,7 +19,8 @@ export default class ResumePDF extends Component {
   }
   
   /**
-   * gets the number of pages in pdf after it loads
+   * gets the number of pages in pdf after it loads, sets the pageNumber to 1 (necessary if we add functionality to
+   * change files)
    * @param {Object} totalPages contains the numPages attribute
    */
   onDocumentLoadSuccess = totalPages => {
