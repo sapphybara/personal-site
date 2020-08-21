@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React  from 'react';
+import PageBase from './PageBase';
 
-export default class Games extends Component {
+export default class Games extends PageBase {
+  
   render() {
     return (
       <div>
-        This is the page with wahoo
+        <h4>Play some of my favorite games!</h4>
       </div>
     );
   }
