@@ -1,0 +1,58 @@
+.Resume {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+
+    &__document {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1em 0;
+
+      .button {
+        transition: all 0.3s ease 0s;
+        opacity: .5;
+        position: absolute;
+        z-index: 3000;
+        top: 20px;
+        width: 90px;
+        &:hover {
+          opacity: .8;
+        }
+      }
+
+      .react-pdf {
+        &__Document {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &__Page {
+          max-width: calc(~"100% - 2em");
+          margin: 1em;
+          box-shadow: 0 0 20px 1px white;
+
+          &__annotations {
+            display: none;
+          }
+
+          canvas {
+            max-width: 100%;
+            height: auto !important;
+          }
+        }
+
+        &__message {
+          padding: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+}

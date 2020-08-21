@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+import React  from 'react';
+import PageBase from './PageBase';
 
-export default class Home extends Component {
+export default class Home extends PageBase {
+  
   render() {
     return (
       <div style={{padding: '30px'}}>
