@@ -24,6 +24,7 @@ export default class CustomNavbar extends Component {
               <CustomLink href="/" val={'Home'}/>
               <CustomLink href="/games" val={'Games'}/>
               <CustomLink href="/resume" val={'Resum' + String.fromCharCode(233)}/>
+              <CustomLink href='/contact' val={'Contact'} />
             </Nav>
             <Nav pullRight>
               <Nav.Item
